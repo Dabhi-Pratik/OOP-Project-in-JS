@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive design for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Simple Bank System</title>
+</head>
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+        <h2>🏦 Bank Account</h2>
+
+        <!-- Account Number Input -->
+        <label>Account Number</label>
+        <!-- Text type used so maxlength works -->
+        <input type="text" id="accNo" maxlength="10" placeholder="Enter 10 digit Account Number">
+
+        <!-- Account Type Selection -->
+        <label>Account Type</label>
+        <select id="accType">
+            <option value="">Select Account</option>
+            <option value="saving">Saving Account</option>
+            <option value="current">Current Account</option>
+        </select>
+
+        <!-- Amount Input -->
+        <label>Amount(₹)</label>
+        <input type="number" id="amount" placeholder="Enter Amount">
+
+        <!-- Action Buttons -->
+        <div class="buttons">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+
+        <!-- Output Message Area -->
+        <div class="output" id="output"></div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="./script.js"></script>
+</body>
+</html>
